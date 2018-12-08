@@ -64,8 +64,7 @@ class App extends Component {
           <p>
           <span id='choose-id2'>IF YOU REALLY WANT TO,</span> <br />
           <span id='choose-id'>PROVE IT BY CLICKING ON THE SPINNY TO MAKE IT SPIN FASTER</span>
-          </p> npm
-            
+          </p> 
         </header>
         <script>
         var s = $()
