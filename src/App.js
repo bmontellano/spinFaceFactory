@@ -37,7 +37,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            PLAY <spinnys>mygames/HIHI.js</spinnys> <br />  <i>and please don't pay attention to this nonsense</i>.
+           <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES,</spinnys> <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>.
           </p>
           <a
             className="App-link"
@@ -48,7 +48,7 @@ class App extends Component {
             Learn React: 
           </a>
           IF YOU REALLY WANT TO,<br /> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROVE IT BY CLICKING ON THE SPINNY TO MAKE IT SPIN FASTER
+            <span id='choose-id'>PROVE IT BY CLICKING ON THE SPINNY TO MAKE IT SPIN FASTER</span>
         </header>
         <script>
         var s = $()
