@@ -49,8 +49,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>This is practice</h1>
+          <img src={logo} className="App-logo" alt="logo">
           <p>
            <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES,</spinnys> <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>.
           </p>
@@ -60,7 +59,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React 
+            Learn React `
           </a>
           <p>
           <span id='choose-id2'>IF YOU REALLY WANT TO,</span> <br />
