@@ -59,12 +59,12 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React `
+            Learn React
           </a>
           <p>
           <span id='choose-id2'>IF YOU REALLY WANT TO,</span> <br />
           <span id='choose-id'>PROVE IT BY CLICKING ON THE SPINNY TO MAKE IT SPIN FASTER</span>
-          </p> 
+          </p> npm
             
         </header>
         <script>
