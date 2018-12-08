@@ -49,7 +49,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo">
+          <img src={logo} className="App-logo" alt="logo" />
           <p>
            <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES,</spinnys> <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>.
           </p>
