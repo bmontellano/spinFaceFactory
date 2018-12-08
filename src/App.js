@@ -29,7 +29,8 @@ class App extends Component {
         $(this).html('<h3> I feel something special, is about to happen.</h3>');
       })
     }
-      if (r && counter > 10){console.log('This is r ---> ' + r); r = r/1.3;}
+    if(counter === 10){$chooseId2.html('<h3>WELCOME TO THE <i>SPIN ZONE</i></h3>'); $chooseId.hide(2000);}
+      if (r && counter > 10){console.log('This is r ---> ' + r); r = r/1.2;}
       if (counter >= 10) {
         console.log("Here's you're reward");
         $(this).css('animation',`App-logo-spin infinite ${r}s linear`);
