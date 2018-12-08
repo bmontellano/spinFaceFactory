@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/spinFaceFactory/precache-manifest.c621c73f62aee5ee517715cd3473ca13.js"
+  "/spinFaceFactory/precache-manifest.55d65d55171a2625ea6671941aff3fa1.js"
 );
 
 workbox.clientsClaim();
