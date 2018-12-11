@@ -14,13 +14,24 @@ class App extends Component {
     var r = 5;
     var $chooseId = $('#choose-id');
     var $chooseId2 = $('#choose-id2');
+    var $spinClassId = $('#play-here');
+    var $learnReact = $(".App-link");
     var logo = $('.App-logo').click(function(){
       counter += 1;
       console.log("This is how many times you've clicked the logo --->" + counter);
       if(counter === 1){
        $chooseId.html("<i>Oooooh, that looks nice</i>");
        $chooseId2.hide(1500);
+       $spinClassId.hide(2100, function(){
+         $spinClassId.html("<p>" + "Counter: " + counter + "</p>")
+         $spinClassId.show(2500, function() {
+          $learnReact.hide(222);
+          $('p').css('padding','0px').css('margin', '0px');
+         });
+       })  
     }
+    $spinClassId.html("<p>" + "Counter: " + counter + "</p>")
+    $('p').css('padding','0px').css('margin', '0px');
     if(counter === 3) {
       $('#choose-id').html("<strong>Oh, <i>woow</i>, I think you're on to something.</strong>")
     }
@@ -52,7 +63,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-           <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES,</spinnys> <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>.
+           <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES, <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>. </spinnys>
           </p>
           <a
             className="App-link"
