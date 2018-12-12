@@ -88,19 +88,16 @@ class App extends Component {
           <p>
            <code id='play-here'>PLAY HERE FOR EXCITING TIMES, <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>. </code>
           </p>
-          <a
+          <p
             className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Learn React
-          </a>
+            Learn Something...
+          </p>
           <form onSubmit={this.handleSubmit}>
             <label>
-              Pic URL:
+              Pic URL: <br />
               <input type="text" value={this.state.picUrl} onChange ={this.handleChange}/>
-            </label>
+            </label> <br />
             <input type="submit" value="SUBMIT" />
           </form>
           <p>
