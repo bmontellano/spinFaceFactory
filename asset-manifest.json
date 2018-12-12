@@ -1,7 +1,7 @@
 {
   "main.css": "/spinFaceFactory/static/css/main.ca6875da.chunk.css",
-  "main.js": "/spinFaceFactory/static/js/main.1da4e5c0.chunk.js",
-  "main.js.map": "/spinFaceFactory/static/js/main.1da4e5c0.chunk.js.map",
+  "main.js": "/spinFaceFactory/static/js/main.26b52cd1.chunk.js",
+  "main.js.map": "/spinFaceFactory/static/js/main.26b52cd1.chunk.js.map",
   "static/js/1.f55b8666.chunk.js": "/spinFaceFactory/static/js/1.f55b8666.chunk.js",
   "static/js/1.f55b8666.chunk.js.map": "/spinFaceFactory/static/js/1.f55b8666.chunk.js.map",
   "runtime~main.js": "/spinFaceFactory/static/js/runtime~main.5c9d6bc0.js",
@@ -9,6 +9,6 @@
   "static/media/logo.svg": "/spinFaceFactory/static/media/logo.5d5d9eef.svg",
   "static/css/main.ca6875da.chunk.css.map": "/spinFaceFactory/static/css/main.ca6875da.chunk.css.map",
   "index.html": "/spinFaceFactory/index.html",
-  "precache-manifest.55a6c33ad1e635b7ec068a7bcebc18bb.js": "/spinFaceFactory/precache-manifest.55a6c33ad1e635b7ec068a7bcebc18bb.js",
+  "precache-manifest.e8a5b431649efa889a2add368d9537e7.js": "/spinFaceFactory/precache-manifest.e8a5b431649efa889a2add368d9537e7.js",
   "service-worker.js": "/spinFaceFactory/service-worker.js"
 }
