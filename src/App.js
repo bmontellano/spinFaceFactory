@@ -7,9 +7,22 @@ import $ from 'jquery';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {picUrl: ''};
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({picUrl: event.target.picUrl})
+  }
+
+  handleSubmit(event) {
+    alert('A url was submittted: ' + this.state.picUrl);
+    event.preventDefault();
   }
 
   componentDidMount() {
+
+    // ********* BEGIN jQuery logic ********** //
     var counter = 0;
     var r = 5;
     var $chooseId = $('#choose-id');
@@ -56,7 +69,9 @@ class App extends Component {
       }
     }
     });
+    // ********** END jQuery logic *************** //
   }
+
   render() {
     return (
       <div className="App">
@@ -73,6 +88,13 @@ class App extends Component {
           >
             Learn React
           </a>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Pic URL:
+              <input type="text" value={this.state.picUrl} onChange ={this.handleChange}/>
+            </label>
+            <input type="submit" value="SUBMIT" />
+          </form>
           <p>
           <span id='choose-id2'>IF YOU REALLY WANT TO,</span> <br />
           <span id='choose-id'>PROVE IT BY CLICKING ON THE SPINNY TO MAKE IT SPIN FASTER</span>
