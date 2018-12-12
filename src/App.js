@@ -9,19 +9,20 @@ class App extends Component {
     super(props);
     this.state = {picUrl: ''};
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({picUrl: event.target.picUrl})
+    this.setState({picUrl: event.target.value})
   }
 
   handleSubmit(event) {
-    alert('A url was submittted: ' + this.state.picUrl);
+    console.log('A url was submitttttttted: ' + this.state.picUrl);
+    alert('If you are sure you"ve submitted an image URL, \n You may tap the spinner to upload your image.');
     event.preventDefault();
   }
 
   componentDidMount() {
-
     // ********* BEGIN jQuery logic ********** //
     var counter = 0;
     var r = 5;
@@ -29,21 +30,28 @@ class App extends Component {
     var $chooseId2 = $('#choose-id2');
     var $spinClassId = $('#play-here');
     var $learnReact = $(".App-link");
-    var logo = $('.App-logo').click(function(){
+    var $logo = $('.App-logo');
+    var thisApp = this;
+    var logo = $logo.click(function(){
+      console.log('This is the picUrl ---->' + thisApp.state.picUrl);
       counter += 1;
       console.log("This is how many times you've clicked the logo --->" + counter);
+      if(thisApp.state.picUrl !== ''){ 
+        console.log('the picUrl is not empty');
+        $logo.attr('src',thisApp.state.picUrl);
+      };
       if(counter === 1){
        $chooseId.html("<i>Oooooh, that looks nice</i>");
        $chooseId2.hide(1500);
        $spinClassId.hide(2100, function(){
-         $spinClassId.html("<p>" + "Counter: " + counter + "</p>")
+         $spinClassId.html("<p>Counter: " + counter + "</p>")
          $spinClassId.show(2500, function() {
           $learnReact.hide(222);
           $('p').css('padding','0px').css('margin', '0px');
          });
        })  
     }
-    $spinClassId.html("<p>" + "Counter: " + counter + "</p>")
+    $spinClassId.html("<p>Counter: " + counter + "</p>")
     $('p').css('padding','0px').css('margin', '0px');
     if(counter === 3) {
       $('#choose-id').html("<strong>Oh, <i>woow</i>, I think you're on to something.</strong>")
@@ -76,9 +84,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="bogus" />
           <p>
-           <spinnys id='play-here'>PLAY HERE FOR EXCITING TIMES, <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>. </spinnys>
+           <code id='play-here'>PLAY HERE FOR EXCITING TIMES, <br />  <i id='spin-class'>and please don't pay attention to the nonsense above...</i>. </code>
           </p>
           <a
             className="App-link"
